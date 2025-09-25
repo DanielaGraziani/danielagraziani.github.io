@@ -251,7 +251,7 @@ async function startMicDetection() {
       );
 
       // ✅ Condición combinada
-      if ((ratio > 0.8 || total > 200) && !blown) {
+      if ((ratio > 0.6 || total > 100) && !blown) {
         blown = true;
         blowOutCandles();
       }
