@@ -153,7 +153,7 @@ async function startMicDetection() {
       console.log("Ratio:", ratio.toFixed(2));
 
       // Umbral más bajo para laptops/móviles
-      if (ratio > 0.3 && !blown) {
+      if (ratio > 0.1 && !blown) {
         blown = true;
         blowOutCandles();
       }
