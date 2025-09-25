@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       type: "image",
       image: "/images/scooter.png",
-      text: "La protagonista de esta historia es una persona muy divertida, aventurera y graciosa.",
+      text: "La protagonista de esta historia es una mujer muy divertida, aventurera y graciosa.",
       title: "La Aventura"
     },
     {
