@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bárbara y las velas mágicas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'VT323', monospace;
+      background-color: #fce4ec;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect width="1" height="1" fill="%23f7d9e6" x="0" y="0" /><rect width="1" height="1" fill="%23f7d9e6" x="5" y="5" /></svg>');
+    }
+
+    .pixel-font {
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    .pixel-text {
+      font-family: 'VT323', monospace;
+    }
+
+    .pixel-shadow {
+      box-shadow: 4px 4px 0px 0px #6a5b9e;
+    }
+
+    .pixel-shadow-sm {
+      box-shadow: 2px 2px 0px 0px #6a5b9e;
+    }
+
+    .pixel-img {
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+
+<body class="flex justify-center items-center min-h-screen p-2">
+  <div
+    class="storybook-container w-full max-w-[600px] bg-[#fffaf0] border-4 border-[#b19cd9] rounded-lg shadow-[8px_8px_0px_0px_#8e7cc3] p-4 relative overflow-hidden">
+    
+    <!-- Header -->
+    <header class="flex items-center justify-between mb-4 border-b-2 border-dashed border-[#b19cd9] pb-2">
+      <button
+        class="menu-button bg-[#b19cd9] text-white border-2 border-[#8e7cc3] px-3 py-2 pixel-font text-xs sm:text-sm cursor-pointer pixel-shadow active:pixel-shadow-sm active:translate-x-[2px] active:translate-y-[2px] ">
+        ♥
+      </button>
+      <h1 class="storybook-title pixel-font text-[#8e7cc3] text-center flex-grow text-base sm:text-lg md:text-xl">
+        Bárbara y las velas mágicas
+      </h1>
+    </header>
+
+    <!-- Content -->
+    <div class="storybook-content flex flex-col gap-4">
+      <div class="page-frame border-4 border-[#b19cd9] bg-[#fdf5e6] p-3 rounded-md shadow-[6px_6px_0px_0px_#d4c0e6]">
+        
+        <!-- Illustration -->
+        <div
+          class="page-illustration w-full h-[250px] sm:h-[350px] md:h-[500px] bg-[#fdf5e6] flex justify-center items-center overflow-hidden mb-3 border-2 border-dashed border-[#d4c0e6]">
+          <img id="page-image" src="" alt="Ilustración del capítulo"  class="w-full h-full  object-cover pixel-img">
+        </div>
+
+        <!-- Text -->
+        <div class="page-text-box  border-2 border-[#b19cd9]  p-2 min-h-[60px] shadow-[3px_3px_0px_0px_#d4c0e6]">
+          <p id="page-text" class="pixel-text text-gray-800 text-sm sm:text-base leading-relaxed whitespace-pre-wrap "></p>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="navigation-controls flex justify-between gap-2 mt-3">
+        <button id="prev-btn"
+          class="pixel-button flex-1 bg-pink-300 text-white border-2 border-pink-500 px-3 py-2 pixel-font text-xs sm:text-sm cursor-pointer shadow-[4px_4px_0px_0px_#e65c9b] active:shadow-[2px_2px_0px_0px_#e65c9b] active:translate-x-[2px] active:translate-y-[2px] disabled:bg-gray-300 disabled:border-gray-400 disabled:shadow-[2px_2px_0px_0px_#999999]">
+          ← Anterior
+        </button>
+        <button id="next-btn"
+          class="pixel-button flex-1 bg-pink-300 text-white border-2 border-pink-500 px-3 py-2 pixel-font text-xs sm:text-sm cursor-pointer shadow-[4px_4px_0px_0px_#e65c9b] active:shadow-[2px_2px_0px_0px_#e65c9b] active:translate-x-[2px] active:translate-y-[2px] disabled:bg-gray-300 disabled:border-gray-400 disabled:shadow-[2px_2px_0px_0px_#999999]">
+          Siguiente →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="cake.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
